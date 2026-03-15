@@ -27,7 +27,7 @@
     <RegisterForComInterop>False</RegisterForComInterop>
     <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
     <FileAlignment>4096</FileAlignment>
-    <BaseIntermediateOutputPath>*</BaseIntermediateOutputPath>
+    <BaseIntermediateOutputPath>build\obj\</BaseIntermediateOutputPath>
     <IntermediateOutputPath>build\obj\</IntermediateOutputPath>
     <WarningLevel>4</WarningLevel>
     <StartAction>Project</StartAction>
