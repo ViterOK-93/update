@@ -1,0 +1,14 @@
+on:
+  push:
+    tags: [ 'v*' ]
+
+jobs:
+  _1:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: microsoft/setup-msbuild@v2
+      - run: msbuild update/update.csproj
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: update/build/bin/update.exe
